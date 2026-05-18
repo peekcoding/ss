@@ -245,8 +245,15 @@ h3 {
   gap: 12px;
 }
 
+.visual-pills {
+  display: grid;
+  gap: 10px;
+  justify-items: end;
+}
+
 .person-card,
-.earnings-pill {
+.earnings-pill,
+.support-pill {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -273,6 +280,15 @@ h3 {
 .earnings-pill {
   color: #4a310b;
   background: #fff0bf;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.support-pill {
+  color: #f7edd6;
+  background: rgba(9, 9, 8, 0.72);
+  border: 1px solid rgba(242, 207, 119, 0.28);
+  font-size: 0.86rem;
   font-weight: 800;
   white-space: nowrap;
 }
@@ -667,6 +683,10 @@ h3 {
   .visual-top {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .visual-pills {
+    justify-items: start;
   }
 
   .earnings-pill {
